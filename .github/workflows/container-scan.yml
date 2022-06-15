@@ -24,4 +24,4 @@ jobs:
 
     - uses: Azure/container-scan@v0
       with:
-        image-name: altinn-register:${{ github.sha }}
+        image-name: altinn-texts:${{ github.sha }}
