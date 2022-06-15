@@ -1,0 +1,24 @@
+version: '3.4'
+
+networks:
+  altinnplatform_network:
+    external: false
+
+services:
+  altinn_texts:
+    container_name: altinn-texts
+    image: altinntexts:latest
+    restart: always
+    networks:
+      - altinnplatform_network
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5020
+    ports:
+      - "5020:5020"
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+
+
