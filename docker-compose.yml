@@ -5,9 +5,9 @@ networks:
     external: false
 
 services:
-  altinn_register:
+  altinn_texts:
     container_name: altinn-texts
-    image: altinnregister:latest
+    image: altinntexts:latest
     restart: always
     networks:
       - altinnplatform_network
