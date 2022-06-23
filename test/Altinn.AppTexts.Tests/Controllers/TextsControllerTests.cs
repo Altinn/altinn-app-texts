@@ -1,11 +1,11 @@
-using Altinn.Texts.Controllers;
+using Altinn.AppTexts.Controllers;
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc.Testing;
 using System.Collections.Generic;
 using System.Text.Json;
 using Xunit;
 
-namespace Altinn.Texts.Tests
+namespace Altinn.AppTexts.Tests
 {
     public class TextsControllerTests : IClassFixture<WebApplicationFactory<TextsController>>
     {

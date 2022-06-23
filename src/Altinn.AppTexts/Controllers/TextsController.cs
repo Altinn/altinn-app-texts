@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace Altinn.Texts.Controllers
+namespace Altinn.AppTexts.Controllers
 {
     [ApiController]
     [Route("texts/api/v1/texts")]
