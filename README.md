@@ -1,2 +1,2 @@
-# altinn-texts
-Microservice for reusable text resourcesæ
+# altinn-app-texts
+Microservice for reusable text resources for Altinn 3 applications.
