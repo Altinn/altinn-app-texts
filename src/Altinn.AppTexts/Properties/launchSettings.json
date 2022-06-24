@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "Altinn.Texts": {
+    "Altinn.AppTexts": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

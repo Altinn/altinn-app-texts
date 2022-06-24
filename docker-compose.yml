@@ -5,17 +5,17 @@ networks:
     external: false
 
 services:
-  altinn_texts:
-    container_name: altinn-texts
-    image: altinntexts:latest
+  altinn_app_texts:
+    container_name: altinn-app-texts
+    image: altinnapptexts:latest
     restart: always
     networks:
       - altinnplatform_network
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:5020
+      - ASPNETCORE_URLS=http://+:5090
     ports:
-      - "5020:5020"
+      - "5090:5090"
     build:
       context: .
       dockerfile: Dockerfile
