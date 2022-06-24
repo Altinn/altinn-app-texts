@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Altinn.Texts\Altinn.Texts.csproj" />
+    <ProjectReference Include="..\..\src\Altinn.AppTexts\Altinn.AppTexts.csproj" />
   </ItemGroup>
 
 </Project>

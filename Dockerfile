@@ -3,7 +3,7 @@ WORKDIR /workspace/
 
 COPY src .
 
-RUN dotnet publish Altinn.Texts/Altinn.Texts.csproj -c Release -o /app_output
+RUN dotnet publish Altinn.AppTexts/Altinn.AppTexts.csproj -c Release -o /app_output
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0.5-alpine3.15 AS final
 EXPOSE 5090
@@ -16,4 +16,4 @@ RUN addgroup -g 3000 dotnet && adduser -u 1000 -G dotnet -D -s /bin/false dotnet
 USER dotnet
 RUN mkdir /tmp/logtelemetry
 
-ENTRYPOINT ["dotnet", "Altinn.Texts.dll"]
+ENTRYPOINT ["dotnet", "Altinn.AppTexts.dll"]

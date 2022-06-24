@@ -20,8 +20,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --tag altinn-texts:${{github.sha}}
+      run: docker build . --tag altinn-app-texts:${{github.sha}}
 
     - uses: Azure/container-scan@v0
       with:
-        image-name: altinn-texts:${{ github.sha }}
+        image-name: altinn-app-texts:${{ github.sha }}
